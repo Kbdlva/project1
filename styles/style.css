@@ -134,6 +134,7 @@ p {
   color: #777777;
 }
 
+
 .btn {
   border-radius: 22px;
   padding: 10px 30px;
@@ -184,7 +185,7 @@ p {
   padding-bottom: 5rem;;
 }
 .connect p {
-  color: var(--dark-color)
+  /* color: var(--dark-color); */
 }
 
 .customer1 .left, .customer2 .right{
@@ -217,10 +218,22 @@ p {
 }
 
 .customer2 p {
+  display: flex;
+  align-items: center;
   width: 30rem;
   padding: 10px 30px;
   box-shadow:0 0 5px rgba(0,0,0,0.1);
 }
+
+.customer1 .dark {
+  color: #fff;
+}
+
+.icons{
+  margin-right: 15px;
+}
+
+
 
 .dark{
   background-color: var(--dark-color);
@@ -298,7 +311,7 @@ h3{
 }
 
 
-.qustions{
+.questions{
    width: 90%;
    margin-left: 5rem;
 }
@@ -310,6 +323,10 @@ h3{
 }
 .blog p {
   color: #000;
+}
+
+.blog {
+  padding-bottom: 3rem;
 }
 
 .blog h1{
@@ -345,6 +362,12 @@ h3{
   text-align: center;
 }
 
+.last {
+  width : 74%;
+  margin: 0 6%; 
+  height: 20rem;;
+}
+
 input {
   border-radius: 20px;
   margin:0;
@@ -371,6 +394,7 @@ footer .left{
   align-items: flex-start;
   padding: 10rem;
   width: 20%;
+  color:lightgray;
 }
 
 footer .right {
@@ -390,7 +414,7 @@ footer ul li{
 
 }
 ul{
-  margin: 0 60px;
+  margin: 0 80px;
   padding: 0;
 
 }
