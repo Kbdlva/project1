@@ -20,12 +20,13 @@ body {
 
 .dark-them, .dark-them h1, .dark-them p{
   background-color: var(--dark-color);
-  color: #fff;
+  color: #fff; 
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
+
 
 section{
   display: flex;
@@ -34,14 +35,12 @@ section{
   align-items: center;
   justify-content: center;
   padding: 3vw 6vw 0vw; 
-  
-
 }
+
 .hero {
   display: row;
   max-height: 100vw;
   padding: 0 6vw; 
-
 }
 
 header {
@@ -64,12 +63,16 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  
+}
+
+.content p {
+  margin: 3rem 0;
+  display: flex;
+  align-items: center;
 }
 
 .content .btn {
-  margin:1rem;
-
+  margin: 0.5rem;
 }
 
 li {
@@ -101,7 +104,6 @@ a{
 .buttons {
   align-self: start;
 }
-
 
 .top {
   width: 32vw;
@@ -139,7 +141,6 @@ p {
   color: #777777;
 }
 
-
 .btn {
   border-radius: 24px;
   padding: 10px 35px;
@@ -148,7 +149,6 @@ p {
   border: 2px solid var(--dark-color);
   font-weight: 700;
   font-size: 1.2vw;
-  
 }
 
 .btn-dark {
@@ -190,19 +190,32 @@ p {
   min-height: 60rem;
   padding-bottom: 5rem;;
 }
-.connect p {
-  /* color: var(--dark-color); */
+
+.customer1 {
+   padding-bottom: 0;
+}
+
+.customer2 {
+  padding-top: 0;
+}
+
+.customer1 p {
+  display: flex;
+  align-items: center;
 }
 
 .customer1 .left, .customer2 .right{
   width: 80%;
   position: relative;
 }
+.connect .we {
+  margin: 3rem 0;
+}
 
 .income {
   position: absolute;
   bottom: 0;
-  transform: translateY(55%);
+  transform: translateY(33%);
   left: 35%;
 }
 .customer1 .right, .customer2 .left{
@@ -215,12 +228,13 @@ p {
 .pie{
   position: absolute;
   bottom: 0;
-  transform: translateY(55%);
+  transform: translateY(45%);
   right: 25%;
 }
 
 .check {
-  width: 20px;
+  width: 2rem;
+  margin-right: 15px;
 }
 
 .customer2 p {
@@ -239,15 +253,14 @@ p {
   margin-right: 15px;
 }
 
-
-
 .dark{
   background-color: var(--dark-color);
 }
-.btns .btn {
-  border-radius: 50%;
-}
 
+
+.btns img {
+  width: 1.5rem;
+}
 .comments {
   display: flex;
   flex-direction: row;
@@ -259,7 +272,6 @@ p {
   width: 20rem;
   border-radius: 5%;
   height:fit-content;
-
 }
 
 .top, .top h1 {
@@ -268,7 +280,6 @@ p {
   align-items: flex-end;
   width: 75%;
 }
-
 
 .avatar {
   display: flex;
@@ -316,7 +327,6 @@ h3{
   padding-top: 3rem;
 }
 
-
 .questions{
    width: 90%;
    margin-left: 5rem;
@@ -356,7 +366,6 @@ h3{
   margin-bottom: 2rem;
 }
 
-
 .date{
   font-weight: normal;
   margin-left: 1rem;
@@ -371,29 +380,34 @@ h3{
 .last {
   width : 74%;
   margin: 0 6%; 
-  height: 20rem;;
+  height: 24rem;;
 }
 
 input {
-  border-radius: 20px;
+  border-radius: 22px;
   margin:0;
   width: fit-content;
   border: 0;
   width: 300px;
-  height: 2.4rem;
+  height: 2.7rem;
+  padding-left: 2rem;
 }
 
-::placeholder{
-  padding: 20px;
+input::placeholder {
+  font-size: 16px;
+}
+
+form {
+  margin-right: 1rem;;
 }
 
 .email {
   display: inline-flex;
+  margin-top: 3rem;
 }
 
 footer {
   display: inline-flex;
-
 }
 
 footer .left{
@@ -413,14 +427,33 @@ footer ul li:first-child {
   font-weight: bold;
 }
 
-footer ul li{
+footer ul li {
   display: flex;
   flex-direction: column;
   margin: 10px 0;
-
 }
-ul{
+
+ul {
   margin: 0 80px;
   padding: 0;
+}
 
+.reserved {
+  margin: 3rem 0;
+}
+
+.btns .btn-basic {
+  margin-right: 1rem;
+}
+
+.arrow:active {
+  transform: scale(.9);
+}
+
+.arrow {
+  background: rgb(255, 255, 255);
+  border: none;
+  padding: .4rem;
+  border-radius: 50%;
+  font-size: 0;
 }
