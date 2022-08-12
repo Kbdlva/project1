@@ -67,6 +67,11 @@ header {
   
 }
 
+.content .btn {
+  margin:1rem;
+
+}
+
 li {
   display: inline;
   margin: 0 15px;
@@ -136,13 +141,14 @@ p {
 
 
 .btn {
-  border-radius: 22px;
-  padding: 10px 30px;
+  border-radius: 24px;
+  padding: 10px 35px;
   font-family: var(--secondary-text);
   cursor: pointer;
   border: 2px solid var(--dark-color);
   font-weight: 700;
-  font-size: 1vw;
+  font-size: 1.2vw;
+  
 }
 
 .btn-dark {
