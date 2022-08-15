@@ -16,21 +16,36 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <img src=".\images\Logo_header_p1.png" class="logo" alt="logo">
-            <nav>
-                <ul style="list-style: none;">
-                    <li><a href="#product">Product</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#help">About</a></li>
-                    <button class="btn btn-basic">
-                        Log in
-                    </button>
-                </ul>
-            </nav>
 
+
+    <header class="header">
+        <div class="container">
+
+            <div class="header_body">
+                <a href="https://www.google.com/search?q=Boldo&rlz=1C1IXYC_ruKZ1008KZ1008&sxsrf=ALiCzsbXogn_ySoE_4IdSKWY0x0nfIrCwA:1660542487373&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiF8t_oksj5AhXhkYsKHe7HBV4Q_AUoAXoECAIQAw&biw=1536&bih=746&dpr=1.25#imgrc=WolQvP0DPf_LyM"
+                class="header_logo">
+                    <img src=".\images\Logo_header_p1.png" class="logo" alt="logo">
+                </a>
+                <div class="header_burger">
+                    <span></span>
+                </div>
+                    <nav class="header_menu">
+                        <ul class="header_list" style="list-style: none;">
+                            <li><a href="#product" class="nav-link">Product</a></li>
+                            <li><a href="#services" class="nav-link">Services</a></li>
+                            <li><a href="#help" class="nav-link" >About</a></li>
+                            <button class="btn btn-basic nav-link"> 
+                                Log in
+                            </button>
+                        </ul>
+                    </nav>
+            </div>
+
+
+        </div>
         </header>
+    <div class="container">
+        
         <main>
             <section class="hero light-them">
 
@@ -299,6 +314,9 @@
 
         </footer>
     </div>
+
+
+    <script src="script.js"></script>
 
 </body>
 
