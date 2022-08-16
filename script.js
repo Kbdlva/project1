@@ -3,6 +3,7 @@ const head_menu = document.querySelector(".header_menu")
 const lock_body = document.querySelector("body")
 
 
+
 burger.addEventListener("click", () => {
     burger.classList.toggle("active");
     head_menu.classList.toggle("active");
