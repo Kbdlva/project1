@@ -1,3 +1,5 @@
+/* Global Styles */
+
 *,
 *::before,
 *::after {
@@ -11,9 +13,18 @@
   --dark-color: #0A2640;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   height: 100vh;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
 }
 
 .light-them {
@@ -52,6 +63,7 @@ section {
 
 }
 
+/* Header */
 
 .header {
   position: fixed;
@@ -89,34 +101,6 @@ section {
   flex-direction: row;
 }
 
-
-@media (max-width: 1030px) {
-  .logos {
-    display: none;
-  }
-
-  .hero {
-    padding: 100px 0 0 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-
-}
-
-@media (max-width: 1500px) {
-
-  .services,
-  .enterprise {
-    padding: 10%;
-    text-align: center;
-  }
-
-
-}
-
-
-
 .header::before {
   content: '';
   position: absolute;
@@ -148,11 +132,6 @@ section {
 
   background-color:aquamarine;
 } */
-
-.container {
-  width: 85%;
-  margin: 0 auto;
-}
 
 /* .services {
   margin: 0;
@@ -282,7 +261,7 @@ p {
 .connect {
   display: flex;
   flex-direction: row;
-  min-height: 900px;
+  min-height: fit-content;
 }
 
 .customer1,
@@ -299,6 +278,7 @@ p {
   padding-top: 0;
 }
 
+
 .customer1 p {
   display: flex;
   align-items: center;
@@ -313,6 +293,7 @@ p {
 .connect .we {
   margin: 3rem 0;
 }
+
 
 
 .man,
@@ -563,12 +544,15 @@ footer {
   width: 100%;
 }
 
-footer .left {
+footer .container {
   display: flex;
   flex-direction: row;
+}
+
+footer .left {
   align-items: flex-start;
   padding: 10rem 10rem 3rem 0;
-  width: 20%;
+  width: 40%;
   color: lightgray;
   margin-left: 0;
 }
@@ -578,8 +562,7 @@ footer .right {
   flex-direction: row;
 }
 
-footer ul li:first-child {
-
+.title {
   font-weight: bold;
 }
 
@@ -587,6 +570,7 @@ footer ul li {
   display: flex;
   flex-direction: column;
   margin: 10px 0;
+  font-family: var(--secondary-text);
 }
 
 footer ul {
@@ -614,8 +598,25 @@ footer ul {
   font-size: 0;
 }
 
+@media (max-width: 550px) {
+  .customer2 .we p {
+    width: 90%;
+  }
+
+}
+
 
 @media (max-width: 850px) {
+
+  footer .left{
+    padding: 10% 0 0 0;
+    width: 50%;
+  }
+  
+  footer .right {
+    display: block;
+    margin: 10% 0 0 0;
+  }
 
   .pics {
     display: flex;
@@ -626,28 +627,48 @@ footer ul {
     padding: 20% 0;
   }
 
+  .inside {
+    display: none;
+  }
+
   .customer1 .left,
   .customer2 .right {
     width: 70%;
     height: fit-content;
   }
 
+  .customer1 .left {
+    padding: 10% 0 0 0;
+  }
+
   .customer1 .right{
-    padding: 20% 0 0 0;
+    padding: 30% 0 0 0;
 
   } 
 
   .connect {
     display: block;
-    
     padding: 0;
+    height: 1200px; ;
   }
+
+
 }
 
 
 @media (max-width: 767px) {
   .help img {
     display: none;
+  }
+
+  p {
+    font-size: 130%;
+  }
+
+  .btn {
+    width: 100%;
+    height: 80px;
+    border-radius: 80px;
   }
 
   .text {
@@ -678,6 +699,22 @@ footer ul {
   .customer2 .right {
     display: none;
   }
+
+  .connect {
+    max-height: 941px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .customer1 .left {
+    padding: 0 0 0 0;
+  }
+
+  .customer1 .right{
+    padding: 0 0 0 0;
+
+  } 
 
   .enterprise {
     display: none;
@@ -722,14 +759,13 @@ footer ul {
     transition: all 0.3s ease 0s;
   }
 
+  .header_burger.active span {
+    transform: scale(0);
+  }
+
   .header_burger.active::before {
     transform: rotate(45deg);
     top: 9px;
-
-  }
-
-  .header_burger.active span {
-    transform: scale(0);
   }
 
   .header_burger.active::after {
@@ -779,23 +815,85 @@ footer ul {
     margin: 0 0 20px 0;
   }
 
+  .header_list .btn {
+    width: 30%;
+    height: 50px;
+  }
+
   .header_list li {
     font-size: 36px;
-    ;
   }
 }
 
 
 @media (max-width: 1180px) {
+  footer .left{
+    padding: 10% 0 0 0;
+    width: 50%;
+  }
 
-.services .card3 {
-  display: none;
-}
-.enterprise .com3 {
-  display: none;
+  footer ul {
+    margin: 20%;
+  }
+
+  footer .right {
+    padding: 0 0 0 15%;
+
+  }
+  .services .card3 {
+    display: none;
+  }
+  .enterprise .com3 {
+    display: none;
+  }
+
+  .blog .card3 {
+    display: none;
+  }
 }
 
-.blog .card3 {
-  display: none;
+@media (max-width: 1500px) { 
+  .com {
+  width: 40%;
+
+  }
 }
+@media (max-width: 1100px) {
+  footer .left{
+    padding: 10% 0 0 0;
+    width: 50%;
+  }
+
+  footer ul {
+    margin: 10%;
+  }
+
+  footer .right {
+    padding: 0 0 0 15%;
+
+  }
 }
+
+@media (max-width: 1030px) {
+  .logos {
+    display: none;
+  }
+
+  .hero {
+    padding: 100px 0 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}
+
+@media (max-width: 1500px) {
+
+  .services,
+  .enterprise {
+    padding: 10%;
+    text-align: center;
+  }
+}
+
