@@ -17,3 +17,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     lock_body.classList.remove('lock')
 
 }))
+
+/*
+    ECMA SCRIPT
+*/
